@@ -1,0 +1,45 @@
+.emailcontainer{
+    width:500px;
+    margin-left:300px;
+}
+.btnemail {
+  background-color: red;
+  border: 1px solid black;
+  color: white;
+  margin-left: 200px;
+  width: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btncall {
+  background-color: green;
+  border: 1px solid black;
+  margin-left: 400px;
+  color: white;
+  width: 150px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.send {
+  background-color: cornflowerblue;
+  color: white;
+  margin-left: 20px;
+  border-radius: 5px;
+  width:100px;
+}
+.reset{
+    background-color:indianred;
+    color:white;
+    margin-left:150px;
+    border-radius:5px;
+    width:100px;
+}
+textarea{
+    background-color:navajowhite;
+    color:mediumslateblue;
+}
+input[type="email"]{
+    width:80%;
+    background-color:lightgoldenrodyellow;
+    color:blue;
+}

@@ -1,0 +1,17 @@
+<div class="productcontainer" [hidden]="products">
+  <button (click)="close()" class="close">X</button>
+  <div class="imgcontainer">
+    <ng-content select=".img1"></ng-content>
+  </div>
+  <div class="informations">
+    <ng-content select=".titleproduct"></ng-content>
+    <input type="number" class="itemsnumber" max="10" min="0" placeholder="number of items" />
+    <ng-content select=".price"></ng-content>
+    <p class="details">
+      Furniture can be a product of design and can be considered a form of decorative art.
+      In addition to furniture's functional role, it can serve a symbolic or religious purpose.
+      It can be made from a vast multitude of materials, including metal, plastic, and wood.
+    </p><hr />
+    <button class="buy"(click)="alert()">buy this item</button>
+  </div>
+</div>

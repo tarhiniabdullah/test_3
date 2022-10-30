@@ -1,0 +1,14 @@
+<div class="contact">
+ <div class="btns"> <button class="btnemail" (click)="showemail()">Contact By E-mail</button>
+  <button class="btncall" (click)="calling()">Call</button></div>
+  <div class="emailcontainer" [hidden]="email">
+    <form>
+      <fieldset>
+        <legend>E-mail</legend>
+        <input type="email" placeholder="please enter your email" required /><hr />
+        <textarea rows="15" cols="60" placeholder="email here !" required></textarea><br />
+        <input type="submit" value="send" class="send" /><input type="reset" class="reset" />
+      </fieldset>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="productcontainer" [hidden]="ads">
+  <button (click)="close()" class="close">X</button>
+  <h1 align="center">Offer !!</h1>
+  <div class="imgcontainer">
+    <img src="./assets/sofatableoutdoorgrey$1099.jpg" />
+  </div>
+  <div class="informations">
+    <del class="price" id="red"><i>$2,318</i></del><br />
+    <b class="price" id="green">$1,580</b>
+    <p class="details">
+      A retailer might offer a outdoor furniture for <strong> $2,318</strong>,
+  meaning that the retailer will sell the furniture for that amount.
+    However, a customer might come into the store and offer <b> $1,580</b> for the sofa and table,
+    meaning that the customer is expressing an interest in buying the product for that amount.
+    </p><hr />
+    <button class="buy" (click)="alert()">buy offer</button>
+  </div>
+</div>

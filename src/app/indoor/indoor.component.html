@@ -1,0 +1,31 @@
+<app-ads></app-ads>
+<div class="body">
+<h1 align="center"><font color="brown">Furniture Indoor</font></h1>
+ <div class="thefilter"><app-filter
+               (searchchanged)="onsearchentered($event)"
+              [all]="getalltypes()"
+              [bed]="getbed()"
+              [sofa]="getsofa()"
+              [table]="gettable()"[chair]="getchair()"[desk]="getdesk()"
+              [chairdesk]="getchairdesk()"
+               (radiobtnchange)="onfilterradiobtnchange($event)"></app-filter>
+  </div>
+ <ng-container *ngFor=" let fi of indoorfurniture">
+   <ng-container *ngIf="searchtext===''||fi.title.toLowerCase().includes(searchtext)">
+   <div class="imgcontainer" *ngIf="selection==='all'|| selection===fi.type">
+     <img src="assets/{{fi.img}}" />
+     <div class="imgcmts">
+       <h3 class="titleimg">{{fi.title}} </h3>
+       <b>items: <span class="items">{{fi.items}}</span></b>
+       <b> <span class="price" [ngStyle]="{color:fi.stat==='above'?'red':'green'}">{{fi.price}}</span></b><br />
+       <b>color: <span class="color">{{fi.color}}</span></b><br /><b class="type">type: <span>{{fi.type}}</span></b><br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b class="status"><span [ngStyle]="{color:fi.status==='IN STOCK'?'green':'red'}">{{fi.status}}</span></b>
+       <p> {{fi.details}}</p><br />
+     </div>
+     <input class="itemnumber" type="number" max="10" min="1" placeholder="number of items" *ngIf="fi.status==='IN STOCK'" />
+     <button class="buy" (click)="alert()" *ngIf="fi.status==='IN STOCK'">buy this product</button>
+     <button class="disabledbuy" (click)="outofstockalert()" *ngIf="fi.status==='OUT OF STOCK'">buy this product</button>
+   </div>
+     </ng-container>
+ </ng-container>
+  </div>

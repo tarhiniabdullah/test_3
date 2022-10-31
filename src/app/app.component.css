@@ -4,6 +4,10 @@
     height:100px;
 
 }
+.logocontainer{
+    position:absolute;
+    margin:10px 20px;
+}
 .link{
     margin-left:200px;
     

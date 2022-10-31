@@ -38,8 +38,68 @@ textarea{
     background-color:navajowhite;
     color:mediumslateblue;
 }
-input[type="email"]{
+.emailcontainer input[type="email"]{
     width:80%;
     background-color:lightgoldenrodyellow;
     color:blue;
+}
+.signin a{
+  text-decoration: underline;
+  color:blue;
+  margin-left:100px;
+}
+.signin{
+  position:absolute;
+  margin-left:600px;
+  width:400px;
+  height: 350px;
+  background-color:gainsboro;
+}
+.signin input[type="email"],[type="password"],[type="text"]{
+  width:350px;
+}
+.signin input{
+  margin:20px 20px;
+}
+
+.confirmsign{
+  background-color: goldenrod;
+  color:white;
+  margin:20px 20px;
+}
+.resetconfirm{
+  background-color: lightcoral;
+  color:white;
+  margin-left:200px;
+}
+.newaccount input[type="email"],[type="password"],[type="text"]{
+  margin:10px 10px;
+  width:350px;
+
+}
+.newaccount input[type="date"]{
+  margin:10px 10px;
+}
+.key{
+  margin-left:10px;
+}
+.newaccount input[type="tel"]{
+  width:250px;
+  margin-left:10px;
+}
+.newaccount{
+  width:400px;
+  height: 450px;
+  background-color: lightgreen;
+  border:1px solid black;
+  margin-left:100px;
+}
+.signin input[type="reset"]{
+  margin-left:150px;
+  background-color: red;
+  color:aliceblue;
+}
+.signinsubmit{
+  background-color: lightseagreen;
+  color:white;
 }

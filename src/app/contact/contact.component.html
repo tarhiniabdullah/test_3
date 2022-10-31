@@ -1,6 +1,6 @@
 <div class="contact">
- <div class="btns"> <button class="btnemail" (click)="showemail()">Contact By E-mail</button>
-  <button class="btncall" (click)="calling()">Call</button></div>
+ <div class="btns"> <button class="btnemail" title="write an email for us " (click)="showemail()">Contact By E-mail</button>
+  <button class="btncall" title="by clicking you contact us by calling" (click)="calling()">Call</button></div>
   <div class="emailcontainer" [hidden]="email">
     <form>
       <fieldset>
@@ -9,6 +9,44 @@
         <textarea rows="15" cols="60" placeholder="email here !" required></textarea><br />
         <input type="submit" value="send" class="send" /><input type="reset" class="reset" />
       </fieldset>
+    </form>
+  </div>
+  <div class="signin">
+    <h1 align="center"><font color="blue">SIGN IN</font></h1>
+    <form>
+      <input type="email" class="signinemail" placeholder="your email" title="please drag your email here !"><br>
+    <input [type]="change?'password':'text'" id="hidepassword" class="signinpassword" placeholder="your password"><br>
+    &nbsp;&nbsp;show password <input type="checkbox" class="signincheckbox"(click)="showpass()" title="show password">
+    <a class="creataccount"(click)=creatacc()>creat an account</a>
+    <hr>
+    <input type="submit" class="signinsubmit" value="sign in">
+    <input type="reset" class="signinreset" value="cancel">
+    </form>
+  </div>
+  <div class="newaccount"[hidden]="creatingaccount">
+   <h1 align="center">Creat a new account</h1>
+    <form>
+      <input type="text" placeholder="please enter your name" class="name" required><br>
+      <input type="text" placeholder="please enter your second name" class="scdname" required><br>
+      <input type="email" placeholder="please enter your email" class="newemail" required><br>
+      <select class="key">
+        <label>key</label>
+        <optgroup>
+          <option>+961</option>
+          <option >+6871</option>
+          <option>+9034</option>
+          <option>+1871</option>
+        </optgroup>
+      </select>
+      <input type="tel" placeholder="enter your phone number"><br>
+     &nbsp;&nbsp;Date of birth: <input type="date" placeholder="date of birth">
+      <input [type]="change2?'password':'text'" placeholder="creat a password" class="creatpass" required><br>
+      <input [type]="change2?'password':'text'" placeholder="confirm your password" class="confirmpass" required>
+      <br>
+      &nbsp;&nbsp;show password <input type="checkbox" (click)="showconfirmpass()" class="confirmcheckbox"><br>
+      <input type="submit" value="confirm" class="confirmsign">
+      <input type="reset" class="resetconfirm">
+      
     </form>
   </div>
 </div>

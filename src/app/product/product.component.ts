@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
   }
   products: boolean = false;
   close() {
-    this.products = true;
+    this.products =true;
   }
   alert() {
     alert("you buy this product");

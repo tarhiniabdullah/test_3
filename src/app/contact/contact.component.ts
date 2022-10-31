@@ -13,9 +13,21 @@ export class ContactComponent implements OnInit {
   }
   email: boolean = true;
   showemail() {
-    this.email = false;
+    this.email =!this.email;
   }
   calling() {
     alert("calling ...\nplease wait");
   }
+  change:boolean=true;
+  showpass(){
+this.change=!this.change;
+  }
+  change2:boolean=true;
+  showconfirmpass(){
+this.change2=!this.change2;
+  }
+creatingaccount:boolean=true;
+creatacc(){
+  this.creatingaccount=!this.creatingaccount;
+}
 }

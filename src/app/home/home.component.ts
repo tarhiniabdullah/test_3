@@ -13,12 +13,12 @@ export class HomeComponent implements OnInit {
   }
   hiddenproduct: boolean = true;
   showproduct() {
-    this.hiddenproduct = false;
+    this.hiddenproduct =!this.hiddenproduct;
   } hiddenproduct2: boolean = true;
   showproduct2() {
-    this.hiddenproduct2 = false;
+    this.hiddenproduct2 =!this.hiddenproduct2;
   } hiddenproduct3: boolean = true;
   showproduct3() {
-    this.hiddenproduct3 = false;
+    this.hiddenproduct3 =!this.hiddenproduct3;
   }
 }

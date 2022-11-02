@@ -10,7 +10,27 @@
 .price {
   margin-left: 65%;
 }
-
+#showcase{
+	width:100%;
+	
+}
+#showcase pre{
+	font-size:30px;
+  font-weight: 400;
+  margin-top:-10px;
+	line-height: 2;
+	position:absolute;
+	animation: heading;
+	animation-duration: 5s;
+	/*animation-iteration-count:infinite;*/
+	animation-fill-mode:forwards;
+	animation-timing-function:linear;
+}
+@keyframes heading{
+	0%{left:-50px;}
+	50%{color:green;}
+	100%{left:415px; color:red;}
+	}
 #green {
   color: green;
   font-weight: 700;

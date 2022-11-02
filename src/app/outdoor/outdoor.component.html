@@ -1,8 +1,24 @@
-<div class="shopping-container">
-  <div class="counter-container">
-    <span id="counter">1</span>
-    <i data-feather="shopping-bag"></i>
-  </div>
-  <button id="add-animation">add </button>
+
+<div class="outdoor">
+  <div class="thetable">
+    
+    <table id="users">
+      <th *ngFor="let h of head">
+        
+      </th>
+    
+     <tbody id="users" *ngFor="let g of coustomers"  >
+      
+       <tr >
+         
+         <td id="blue">{{g.id}}</td><td>{{g.name}}</td><td>{{g.gender}}</td><td>{{g.product}}</td>
+         <td [ngStyle]="{color:g.status==='buy'?'green':'red'}">{{g.status}}</td>
+         <td [ngStyle]="{color:g.status==='buy'?'green':'red'}">{{g.total}}</td> 
+         
+       </tr>
+     </tbody>
+   </table>
+      
+     </div>
 </div>
-<app-ads></app-ads>
+ 
